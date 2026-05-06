@@ -24,7 +24,7 @@ windows respectively) and must be run as separate commands.
 Usage -- takeoff
 ----------------
     python3 xgb.py \
-        --features all_data/preprocessed_25/features_imputed.csv \
+        --features all_data/preprocessed_25/features_raw.csv \
         --events TAKEOFF \
         --skip_tuning \
         --fixed_model_params '{"n_estimators":300,"learning_rate":0.103,"max_depth":4,
@@ -41,7 +41,7 @@ Usage -- takeoff
 Usage -- landing
 ----------------
     python3 xgb.py \
-        --features all_data/preprocessed_20/features_imputed.csv \
+        --features all_data/preprocessed_20/features_raw.csv \
         --events LANDING \
         --skip_tuning \
         --fixed_model_params '{"n_estimators":300,"learning_rate":0.103,"max_depth":4,
