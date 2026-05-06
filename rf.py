@@ -27,7 +27,7 @@ windows respectively) and must be run as separate commands.
 Usage -- takeoff
 ----------------
     python3 rf.py \
-        --features all_data/preprocessed_25/features_imputed.csv \
+        --features all_data/preprocessed_25/features_raw.csv \
         --out_dir rf_runs/takeoff/ \
         --events TAKEOFF \
         --balancing undersample --neg_ratio 8 \
@@ -38,7 +38,7 @@ Usage -- takeoff
 Usage -- landing
 ----------------
     python3 rf.py \
-        --features all_data/preprocessed_20/features_imputed.csv \
+        --features all_data/preprocessed_20/features_raw.csv \
         --out_dir rf_runs/landing/ \
         --events LANDING \
         --balancing undersample --neg_ratio 8 \
